@@ -1,8 +1,20 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { GlobalStyles } from "./styles";
+import routes from "./routes";
+import { ThemeProvider } from "styled-components";
+import Home from "./screens/Home";
+import Projects from "./screens/Projects";
+import Blogs from "./screens/Blogs";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Let's start make my home page!!</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path={routes.projects} element={<Projects />} />
+        <Route path={routes.blogs} element={<Blogs />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
