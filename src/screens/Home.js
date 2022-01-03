@@ -1,4 +1,10 @@
+import styled from "styled-components";
+
+const Title = styled.div`
+  color: ${(props) => props.theme.main};
+`;
+
 function Home() {
-  return <h1>Home Here</h1>;
+  return <Title>Home Here</Title>;
 }
 export default Home;
