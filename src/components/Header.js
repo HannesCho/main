@@ -1,5 +1,6 @@
-import { faAddressBook } from "@fortawesome/free-regular-svg-icons";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const SHeader = styled.header`
@@ -15,19 +16,45 @@ const Wrapper = styled.div`
   max-width: 930px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 `;
-const Column = styled.span`
-  font-weight: 600;
-  color: white;
+
+const HomeIcon = styled.div``;
+const ListContainer = styled.ul`
+  display: flex;
+  justify-content: space-around;
+`;
+const NavLink = styled.li`
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
 `;
 
 function Header() {
   return (
     <SHeader>
       <Wrapper>
-        <Column>Home</Column>
+        <HomeIcon>
+          <Link to="/">
+            <FontAwesomeIcon icon={faHome} color="white" />
+          </Link>
+        </HomeIcon>
+        <ListContainer>
+          <NavLink>
+            <Link to="/about">About</Link>
+          </NavLink>
+          <NavLink>
+            <Link to="/projects">Projects</Link>
+          </NavLink>
+          <NavLink>
+            <Link to="/blogs">Blogs</Link>
+          </NavLink>
+        </ListContainer>
       </Wrapper>
     </SHeader>
   );

@@ -6,6 +6,7 @@ import Home from "./screens/Home";
 import Projects from "./screens/Projects";
 import Blogs from "./screens/Blogs";
 import Layout from "./components/Layout";
+import About from "./screens/About";
 
 function App() {
   const theme = {
@@ -24,8 +25,30 @@ function App() {
               </Layout>
             }
           />
-          <Route path={routes.projects} element={<Projects />} />
-          <Route path={routes.blogs} element={<Blogs />} />
+          <Route
+            path={routes.about}
+            element={
+              <Layout>
+                <About />
+              </Layout>
+            }
+          />
+          <Route
+            path={routes.projects}
+            element={
+              <Layout>
+                <Projects />
+              </Layout>
+            }
+          />
+          <Route
+            path={routes.blogs}
+            element={
+              <Layout>
+                <Blogs />
+              </Layout>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
