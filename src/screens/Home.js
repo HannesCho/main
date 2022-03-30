@@ -1,5 +1,6 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Col, Container, Row, Image, Figure } from "react-bootstrap";
 import styled from "styled-components";
+import Fig from "../images/IMG_0009.JPG";
 
 const Title = styled.div`
   color: ${(props) => props.theme.main};
@@ -9,42 +10,15 @@ function Home() {
   return (
     <>
       <Title>Home Here</Title>
-
-      <>
-        <Navbar bg="dark" variant="dark">
-          <Container>
-            <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar>
-        <br />
-        <Navbar bg="primary" variant="dark">
-          <Container>
-            <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar>
-
-        <br />
-        <Navbar bg="light" variant="light">
-          <Container>
-            <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar>
-      </>
+      <br />
+      <Container>
+        <Row>
+          <Col>
+            <Image src={Fig} width={171} height={180} roundedCircle />
+          </Col>
+          <Col>2 of 2</Col>
+        </Row>
+      </Container>
     </>
   );
 }
