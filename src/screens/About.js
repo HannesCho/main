@@ -1,10 +1,4 @@
-import styled from "styled-components";
-
-const Title = styled.div`
-  color: ${(props) => props.theme.main};
-`;
-
 function About() {
-  return <Title>About Here</Title>;
+  return <h1>About Here</h1>;
 }
 export default About;

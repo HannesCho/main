@@ -1,19 +1,11 @@
-import styled from "styled-components";
+import { Container } from "react-bootstrap";
 import Header from "./Header";
-
-const Content = styled.main`
-  margin: 0 auto;
-  margin-top: 45px;
-  max-width: 930px;
-  width: 100%;
-  color: black;
-`;
 
 function Layout({ children }) {
   return (
     <>
       <Header />
-      <Content>{children}</Content>
+      <Container>{children}</Container>
     </>
   );
 }

@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { GlobalStyles } from "./styles";
 import routes from "./routes";
-import { ThemeProvider } from "styled-components";
+import ThemeProvider from "react-bootstrap/ThemeProvider";
 import Home from "./screens/Home";
 import Projects from "./screens/Projects";
 import Blogs from "./screens/Blogs";
@@ -10,12 +10,10 @@ import About from "./screens/About";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const theme = {
-    main: "mediumseagreen",
-  };
   return (
-    <ThemeProvider theme={theme}>
-      {/* <GlobalStyles /> */}
+    <ThemeProvider
+      breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
+    >
       <BrowserRouter>
         <Routes>
           <Route
