@@ -2,16 +2,17 @@ import { Col, Container, Row, Image } from "react-bootstrap";
 import Fig from "../images/IMG_0009.JPG";
 
 const divStyle = {
-  background: "linear-gradient(110deg, #1e81b0, #1e81b0 50%, black 50%, black)",
+  background:
+    "linear-gradient(110deg, #6C757D, #6C757D 50%, #212529 50%, #212529)",
 };
 
 function Home() {
   return (
-    <Container fluid className="vh-100 vw-100 bg-success bg-opacity-25 p-0 m-0">
+    <Container fluid className="vw-100 p-0 m-0 bg-secondary">
       <Row
         fluid="md"
         style={divStyle}
-        className="m-0 d-flex flex-row align-items-center h-50"
+        className="m-0 d-flex flex-row align-items-center vh-100"
       >
         <Col className="d-flex flex-column align-items-center">
           <span className="m-0 fs-4">I am</span>
@@ -21,7 +22,7 @@ function Home() {
           <Image src={Fig} width={250} height={250} roundedCircle />
         </Col>
       </Row>
-      <Row className="bg-dark text-white">
+      <Row className="m-0 p-5 bg-dark text-white">
         I am a junior full-stack developer with a variety of experience and
         knowledge. I have extensive experience in working as a team with people
         with various backgrounds across regions and fields. I have worked with
@@ -30,14 +31,20 @@ function Home() {
         essential communication and interpersonal skills that enable me to
         collaborate with other people.
       </Row>
-      <Row>
-        <Col>About me</Col>
+      <Row fluid="md" className="m-0 d-flex flex-row align-items-center vh-100">
+        <Col className="d-flex flex-column align-items-center vh-100">
+          About me
+        </Col>
       </Row>
-      <Row>
-        <Col>Skills</Col>
+      <Row fluid="md" className="m-0 d-flex flex-row align-items-center vh-100">
+        <Col className="d-flex flex-column align-items-center vh-100">
+          Skills
+        </Col>
       </Row>
-      <Row>
-        <Col>Portfolio</Col>
+      <Row fluid="md" className="m-0 d-flex flex-row align-items-center vh-100">
+        <Col className="d-flex flex-column align-items-center vh-100">
+          Portfolio
+        </Col>
       </Row>
     </Container>
   );

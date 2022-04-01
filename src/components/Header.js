@@ -4,7 +4,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 
 function Header() {
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="dark" variant="dark" fixed="top">
       <Container>
         <Navbar.Brand href="/">
           <FontAwesomeIcon icon={faHome} color="white" />
