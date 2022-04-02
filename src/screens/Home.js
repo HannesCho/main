@@ -1,5 +1,11 @@
 import { Col, Container, Row, Image } from "react-bootstrap";
 import Fig from "../images/IMG_0009.JPG";
+import htmlIcon from "../images/html.svg";
+import cssIcon from "../images/css.svg";
+import jsIcon from "../images/js.svg";
+import reactIcon from "../images/react.svg";
+import bootstrapIcon from "../images/bootstrap.svg";
+import gitIcon from "../images/git.svg";
 
 const divStyle = {
   background:
@@ -8,6 +14,11 @@ const divStyle = {
 
 const textStyle = {
   letterSpacing: "1rem",
+};
+
+const iconStyle = {
+  width: "3rem",
+  height: "3rem",
 };
 
 const smallTitles =
@@ -49,6 +60,39 @@ function Home() {
           <span className={smallTitles} style={textStyle}>
             Skills
           </span>
+          <Container className="d-flex flex-column border">
+            <Row className="mt-4">
+              <span className="fs-3 fw-bold text-uppercase">Using Now :</span>
+            </Row>
+            <Row className="m-3">
+              <Col className={colClass}>
+                <Image src={htmlIcon} style={iconStyle} roundedCircle />
+                <span>HTML</span>
+              </Col>
+              <Col className={colClass}>
+                <Image src={cssIcon} style={iconStyle} roundedCircle />
+                <span>CSS</span>
+              </Col>
+              <Col className={colClass}>
+                <Image src={jsIcon} style={iconStyle} roundedCircle />
+                <span>JAVASCRIPT</span>
+              </Col>
+            </Row>
+            <Row className="m-3">
+              <Col className={colClass}>
+                <Image src={reactIcon} style={iconStyle} roundedCircle />
+                <span>REACT</span>
+              </Col>
+              <Col className={colClass}>
+                <Image src={bootstrapIcon} style={iconStyle} roundedCircle />
+                <span>BOOTSTRAP</span>
+              </Col>
+              <Col className={colClass}>
+                <Image src={gitIcon} style={iconStyle} roundedCircle />
+                <span>Git</span>
+              </Col>
+            </Row>
+          </Container>
         </Col>
       </Row>
       <Row fluid="md" className={rowClass}>
