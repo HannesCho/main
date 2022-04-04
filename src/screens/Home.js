@@ -1,4 +1,6 @@
 import { Col, Container, Row, Image } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Fig from "../images/IMG_0009.JPG";
 import htmlIcon from "../images/html.svg";
 import cssIcon from "../images/css.svg";
@@ -6,6 +8,17 @@ import jsIcon from "../images/js.svg";
 import reactIcon from "../images/react.svg";
 import bootstrapIcon from "../images/bootstrap.svg";
 import gitIcon from "../images/git.svg";
+import nodeIcon from "../images/node.svg";
+import mongoIcon from "../images/MongoDB_XriFIJg.png";
+import typeIcon from "../images/ts.svg";
+import graphIcon from "../images/Graph_QL.png";
+import nestIcon from "../images/Nest_JS.png";
+import engIcon from "../images/united-states-of-america-flag-medium.png";
+import gerIcon from "../images/germany-flag-medium.png";
+import korIcon from "../images/south-korea-flag-medium.png";
+import pyIcon from "../images/python_l9Src2C_CyOJ4MD.png";
+import sassIcon from "../images/sass.svg";
+import figIcon from "../images/figma.svg";
 
 const divStyle = {
   background:
@@ -60,38 +73,110 @@ function Home() {
           <span className={smallTitles} style={textStyle}>
             Skills
           </span>
-          <Container className="d-flex flex-column border">
-            <Row className="mt-4">
-              <span className="fs-3 fw-bold text-uppercase">Using Now :</span>
-            </Row>
-            <Row className="m-3">
-              <Col className={colClass}>
-                <Image src={htmlIcon} style={iconStyle} roundedCircle />
-                <span>HTML</span>
-              </Col>
-              <Col className={colClass}>
-                <Image src={cssIcon} style={iconStyle} roundedCircle />
-                <span>CSS</span>
-              </Col>
-              <Col className={colClass}>
-                <Image src={jsIcon} style={iconStyle} roundedCircle />
-                <span>JAVASCRIPT</span>
-              </Col>
-            </Row>
-            <Row className="m-3">
-              <Col className={colClass}>
-                <Image src={reactIcon} style={iconStyle} roundedCircle />
-                <span>REACT</span>
-              </Col>
-              <Col className={colClass}>
-                <Image src={bootstrapIcon} style={iconStyle} roundedCircle />
-                <span>BOOTSTRAP</span>
-              </Col>
-              <Col className={colClass}>
-                <Image src={gitIcon} style={iconStyle} roundedCircle />
-                <span>Git</span>
-              </Col>
-            </Row>
+          <Container className="d-flex flex-column">
+            <Container className="using-now">
+              <Row className="mt-4">
+                <span className="fs-3 fw-bold text-uppercase">Using Now :</span>
+              </Row>
+              <Row className="m-3">
+                <Col className={colClass}>
+                  <Image src={htmlIcon} style={iconStyle} roundedCircle />
+                  <span>HTML</span>
+                </Col>
+                <Col className={colClass}>
+                  <Image src={cssIcon} style={iconStyle} roundedCircle />
+                  <span>CSS</span>
+                </Col>
+                <Col className={colClass}>
+                  <Image src={jsIcon} style={iconStyle} roundedCircle />
+                  <span>JAVASCRIPT</span>
+                </Col>
+                <Col className={colClass}>
+                  <Image src={typeIcon} style={iconStyle} roundedCircle />
+                  <span>TYPESCRIPT</span>
+                </Col>
+              </Row>
+              <Row className="m-3">
+                <Col className={colClass}>
+                  <Image src={reactIcon} style={iconStyle} roundedCircle />
+                  <span>REACT</span>
+                </Col>
+                <Col className={colClass}>
+                  <Image src={bootstrapIcon} style={iconStyle} roundedCircle />
+                  <span>BOOTSTRAP</span>
+                </Col>
+                <Col className={colClass}>
+                  <Image src={gitIcon} style={iconStyle} roundedCircle />
+                  <span>Git</span>
+                </Col>
+                <Col className={colClass}>
+                  <FontAwesomeIcon icon={faGithub} style={iconStyle} />
+                  <span>Github</span>
+                </Col>
+              </Row>
+              <Row className="m-3">
+                <Col className={colClass}>
+                  <Image src={nodeIcon} style={iconStyle} roundedCircle />
+                  <span>NodeJS</span>
+                </Col>
+                <Col className={colClass}>
+                  <Image src={mongoIcon} style={iconStyle} roundedCircle />
+                  <span>MongoDB</span>
+                </Col>
+                <Col className={colClass}>
+                  <Image src={graphIcon} style={iconStyle} roundedCircle />
+                  <span>GraphQL</span>
+                </Col>
+                <Col className={colClass}>
+                  <Image src={nestIcon} style={iconStyle} roundedCircle />
+                  <span>NestJS</span>
+                </Col>
+              </Row>
+            </Container>
+            <Container className="learing-now">
+              <Row className="mt-4">
+                <span className="fs-3 fw-bold text-uppercase">
+                  Learing Now :
+                </span>
+              </Row>
+              <Row className="m-3">
+                <Col className={colClass}>
+                  <Image src={sassIcon} style={iconStyle} roundedCircle />
+                  <span>SASS</span>
+                </Col>
+                <Col className={colClass}>
+                  <Image src={figIcon} style={iconStyle} roundedCircle />
+                  <span>Figma</span>
+                </Col>
+                <Col className={colClass}></Col>
+                <Col className={colClass}></Col>
+              </Row>
+            </Container>
+            <Container className="other-skills">
+              <Row className="mt-4">
+                <span className="fs-3 fw-bold text-uppercase">
+                  Other Skills:
+                </span>
+              </Row>
+              <Row className="m-3">
+                <Col className={colClass}>
+                  <Image src={korIcon} style={iconStyle} roundedCircle />
+                  <span>Korean</span>
+                </Col>
+                <Col className={colClass}>
+                  <Image src={engIcon} style={iconStyle} roundedCircle />
+                  <span>English</span>
+                </Col>
+                <Col className={colClass}>
+                  <Image src={gerIcon} style={iconStyle} roundedCircle />
+                  <span>German</span>
+                </Col>
+                <Col className={colClass}>
+                  <Image src={pyIcon} style={iconStyle} roundedCircle />
+                  <span>python</span>
+                </Col>
+              </Row>
+            </Container>
           </Container>
         </Col>
       </Row>
