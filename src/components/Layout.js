@@ -5,7 +5,7 @@ function Layout({ children }) {
   return (
     <>
       <Header />
-      <Container fluid className="p-0 m-0">
+      <Container fluid className="p-0 m-0 mt-4">
         {children}
       </Container>
     </>
