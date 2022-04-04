@@ -19,6 +19,7 @@ import korIcon from "../images/south-korea-flag-medium.png";
 import pyIcon from "../images/python_l9Src2C_CyOJ4MD.png";
 import sassIcon from "../images/sass.svg";
 import figIcon from "../images/figma.svg";
+import seperator from "../images/separatorBlack.png";
 
 const divStyle = {
   background:
@@ -32,6 +33,9 @@ const textStyle = {
 const iconStyle = {
   width: "3rem",
   height: "3rem",
+};
+const sepStyle = {
+  margin: "2rem",
 };
 
 const smallTitles =
@@ -50,7 +54,7 @@ function Home() {
       data-bs-offset="0"
       tabindex="0"
     >
-      <Container fluid id="home" lassName="home vw-100 p-0 m-0 bg-secondary">
+      <Container fluid id="home" className="home vw-100 p-0 m-0 bg-secondary">
         <Row fluid="md" style={divStyle} className={rowClass}>
           <Col className={colClass}>
             <span className="m-0 fs-4">I am</span>
@@ -70,7 +74,13 @@ function Home() {
           enable me to collaborate with other people.
         </Row>
       </Container>
-      <Row id="scrollspyHeading1" style={{ marginBottom: "4rem" }}></Row>
+      <Row
+        id="scrollspyHeading1"
+        style={sepStyle}
+        className="d-flex justify-content-center"
+      >
+        <Image src={seperator} style={{ width: "10rem" }} />
+      </Row>
       <Container id="scrollspyHeading1" className="about-me">
         <Row fluid="md" className={rowClass}>
           <Col className={smallColClass}>
@@ -80,7 +90,13 @@ function Home() {
           </Col>
         </Row>
       </Container>
-      <Row id="scrollspyHeading2" style={{ marginBottom: "4rem" }}></Row>
+      <Row
+        id="scrollspyHeading2"
+        style={sepStyle}
+        className="d-flex justify-content-center"
+      >
+        <Image src={seperator} style={{ width: "10rem" }} />
+      </Row>
       <Container id="scrollspyHeading2" className="skills">
         <Row fluid="md" className={rowClass}>
           <Col className={smallColClass}>
@@ -201,7 +217,13 @@ function Home() {
           </Col>
         </Row>
       </Container>
-      <Row id="scrollspyHeading3" style={{ marginBottom: "4rem" }}></Row>
+      <Row
+        id="scrollspyHeading3"
+        style={sepStyle}
+        className="d-flex justify-content-center"
+      >
+        <Image src={seperator} style={{ width: "10rem" }} />
+      </Row>
       <Container id="scrollspyHeading3" className="projects">
         <Row fluid="md" className={rowClass}>
           <Col className={smallColClass}>
