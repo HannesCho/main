@@ -1,12 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import { GlobalStyles } from "./styles";
 import routes from "./routes";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 import Home from "./screens/Home";
 import Projects from "./screens/Projects";
-import Blogs from "./screens/Blogs";
 import Layout from "./components/Layout";
-import About from "./screens/About";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -25,26 +22,10 @@ function App() {
             }
           />
           <Route
-            path={routes.about}
-            element={
-              <Layout>
-                <About />
-              </Layout>
-            }
-          />
-          <Route
             path={routes.projects}
             element={
               <Layout>
                 <Projects />
-              </Layout>
-            }
-          />
-          <Route
-            path={routes.blogs}
-            element={
-              <Layout>
-                <Blogs />
               </Layout>
             }
           />

@@ -1,6 +1,11 @@
 import { Col, Container, Row, Image } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faLinkedinIn,
+  faMailchimp,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   bgImage,
   htmlIcon,
@@ -22,6 +27,7 @@ import {
   figIcon,
   separator,
 } from "../images/images.js";
+import { faEnvelope, faMailBulk } from "@fortawesome/free-solid-svg-icons";
 
 const divStyle = {
   background:
@@ -43,8 +49,8 @@ const sepStyle = {
 const smallTitles =
   "mt-4 pt-3 pb-3 ps-3 text-center text-uppercase fs-2 fw-bold border border-dark border-4";
 const rowClass = "m-0 d-flex flex-row align-items-center vh-100";
-const colClass = "d-flex flex-column align-items-center";
-const smallColClass = "d-flex flex-column align-items-center vh-100";
+const colClass = "d-flex flex-column align-items-center vh-100";
+const smallColClass = "d-flex flex-column align-items-center";
 
 function Home() {
   return (
@@ -56,24 +62,48 @@ function Home() {
       data-bs-offset="0"
       tabindex="0"
     >
-      <Container fluid id="home" className="home vw-100 p-0 m-0 bg-secondary">
-        <Row fluid="md" style={divStyle} className={rowClass}>
-          <Col className={colClass}>
-            <span className="m-0 fs-4">I am</span>
-            <span className="m-0 ps-4 fs-1">Hannes Cho</span>
+      <Container
+        fluid
+        id="home"
+        className="home vw-100 vh-100 p-0 m-0 bg-secondary"
+      >
+        <Row
+          fluid="md"
+          style={divStyle}
+          className="m-0 d-flex flex-row align-items-center h-75"
+        >
+          <Col className="d-flex flex-column">
+            <span className="m-0 ps-4 fs-6 text-start">
+              I am a Web Developer
+            </span>
+            <span className="m-0 fs-1 text-center">Hannes Cho</span>
+            <div className="d-flex flex-row align-items-center justify-content-center w-100 mt-5">
+              <a href="https://github.com/HannesCho/" className="me-3">
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  style={{ width: "2rem", height: "2rem", color: "black" }}
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/hoonsungcho/"
+                className="me-3"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  style={{ width: "2rem", height: "2rem", color: "#0A66C2" }}
+                />
+              </a>
+              <a href="mailto:hoonsungcho11@gmail.com">
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  style={{ width: "2rem", height: "2rem", color: "black" }}
+                />
+              </a>
+            </div>
           </Col>
-          <Col className={colClass}>
+          <Col className={smallColClass}>
             <Image src={bgImage} width={250} height={250} roundedCircle />
           </Col>
-        </Row>
-        <Row className="m-0 p-5 bg-dark text-white fs-6 fw-light">
-          I am a junior full-stack developer with a variety of experience and
-          knowledge. I have extensive experience in working as a team with
-          people with various backgrounds across regions and fields. I have
-          worked with diverse scientists on research teams, military officials,
-          and people with various age groups from students to elders, and have
-          cultivated essential communication and interpersonal skills that
-          enable me to collaborate with other people.
         </Row>
       </Container>
       <Row
@@ -83,12 +113,54 @@ function Home() {
       >
         <Image src={separator} style={{ width: "10rem" }} />
       </Row>
-      <Container id="scrollspyHeading1" className="about-me">
+      <Container className="about-me d-flex flex-column">
         <Row fluid="md" className={rowClass}>
-          <Col className={smallColClass}>
+          <Col className={colClass}>
             <span className={smallTitles} style={textStyle}>
               About Me
             </span>
+            <Container>
+              <Row fluid="md" className="">
+                <p>
+                  I am a junior web developer with a variety of experience and
+                  knowledge.
+                </p>
+                <p>
+                  I have extensive experience in working as a team with people
+                  with various backgrounds across regions and fields. I have
+                  worked with diverse scientists on research teams, military
+                  officials, and people with various age groups from students to
+                  elders, and have cultivated essential communication and
+                  interpersonal skills that enable me to collaborate with other
+                  people.
+                </p>
+              </Row>
+              <Row>
+                <p>
+                  More than 8 years of studies in science rendered me
+                  exceptional analytical and problem-solving skills as well as
+                  critical reasoning skills. 2 years of mandatory military
+                  service in South Korea elevated my ability to work under high
+                  pressure and deliver results on time to impeccable standards.
+                  Through volunteer work in the bible school and church, I have
+                  gained valuable experience in mentoring students, supervising
+                  teams, and facilitating events as a leader.
+                </p>
+                <p>
+                  I enjoy learning new things as well as facing challenges and
+                  that is why I am so passionate about software development. It
+                  always challenges me, and I enjoy the process of finding a new
+                  way of solving problems. Through self-teaching and boot camp,
+                  I have expanded my capacity to retain new things quickly and
+                  become a proactive learner.
+                </p>
+                <p>
+                  I believe all my skills and experience coupled with software
+                  development skills would be valuable assets to my future team
+                  and company.
+                </p>
+              </Row>
+            </Container>
           </Col>
         </Row>
       </Container>
@@ -99,9 +171,9 @@ function Home() {
       >
         <Image src={separator} style={{ width: "10rem" }} />
       </Row>
-      <Container id="scrollspyHeading2" className="skills">
+      <Container className="skills">
         <Row fluid="md" className={rowClass}>
-          <Col className={smallColClass}>
+          <Col className={colClass}>
             <span className={smallTitles} style={textStyle}>
               Skills
             </span>
@@ -113,29 +185,29 @@ function Home() {
                   </span>
                 </Row>
                 <Row className="m-3">
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={htmlIcon} style={iconStyle} roundedCircle />
                     <span>HTML</span>
                   </Col>
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={cssIcon} style={iconStyle} roundedCircle />
                     <span>CSS</span>
                   </Col>
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={jsIcon} style={iconStyle} roundedCircle />
                     <span>JAVASCRIPT</span>
                   </Col>
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={typeIcon} style={iconStyle} roundedCircle />
                     <span>TYPESCRIPT</span>
                   </Col>
                 </Row>
                 <Row className="m-3">
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={reactIcon} style={iconStyle} roundedCircle />
                     <span>REACT</span>
                   </Col>
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image
                       src={bootstrapIcon}
                       style={iconStyle}
@@ -143,29 +215,29 @@ function Home() {
                     />
                     <span>BOOTSTRAP</span>
                   </Col>
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={gitIcon} style={iconStyle} roundedCircle />
                     <span>Git</span>
                   </Col>
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <FontAwesomeIcon icon={faGithub} style={iconStyle} />
                     <span>Github</span>
                   </Col>
                 </Row>
                 <Row className="m-3">
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={nodeIcon} style={iconStyle} roundedCircle />
                     <span>NodeJS</span>
                   </Col>
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={mongoIcon} style={iconStyle} roundedCircle />
                     <span>MongoDB</span>
                   </Col>
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={graphIcon} style={iconStyle} roundedCircle />
                     <span>GraphQL</span>
                   </Col>
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={nestIcon} style={iconStyle} roundedCircle />
                     <span>NestJS</span>
                   </Col>
@@ -178,16 +250,16 @@ function Home() {
                   </span>
                 </Row>
                 <Row className="m-3">
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={sassIcon} style={iconStyle} roundedCircle />
                     <span>SASS</span>
                   </Col>
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={figIcon} style={iconStyle} roundedCircle />
                     <span>Figma</span>
                   </Col>
-                  <Col className={colClass}></Col>
-                  <Col className={colClass}></Col>
+                  <Col className={smallColClass}></Col>
+                  <Col className={smallColClass}></Col>
                 </Row>
               </Container>
               <Container className="other-skills">
@@ -197,19 +269,19 @@ function Home() {
                   </span>
                 </Row>
                 <Row className="m-3">
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={korIcon} style={iconStyle} roundedCircle />
                     <span>Korean</span>
                   </Col>
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={engIcon} style={iconStyle} roundedCircle />
                     <span>English</span>
                   </Col>
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={gerIcon} style={iconStyle} roundedCircle />
                     <span>German</span>
                   </Col>
-                  <Col className={colClass}>
+                  <Col className={smallColClass}>
                     <Image src={pyIcon} style={iconStyle} roundedCircle />
                     <span>python</span>
                   </Col>
@@ -226,9 +298,9 @@ function Home() {
       >
         <Image src={separator} style={{ width: "10rem" }} />
       </Row>
-      <Container id="scrollspyHeading3" className="projects">
+      <Container className="projects">
         <Row fluid="md" className={rowClass}>
-          <Col className={smallColClass}>
+          <Col className={colClass}>
             <span className={smallTitles} style={textStyle}>
               PROJECTS
             </span>
