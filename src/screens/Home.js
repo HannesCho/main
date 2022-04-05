@@ -1,25 +1,27 @@
 import { Col, Container, Row, Image } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import Fig from "../images/IMG_0009.JPG";
-import htmlIcon from "../images/html.svg";
-import cssIcon from "../images/css.svg";
-import jsIcon from "../images/js.svg";
-import reactIcon from "../images/react.svg";
-import bootstrapIcon from "../images/bootstrap.svg";
-import gitIcon from "../images/git.svg";
-import nodeIcon from "../images/node.svg";
-import mongoIcon from "../images/MongoDB_XriFIJg.png";
-import typeIcon from "../images/ts.svg";
-import graphIcon from "../images/Graph_QL.png";
-import nestIcon from "../images/Nest_JS.png";
-import engIcon from "../images/united-states-of-america-flag-medium.png";
-import gerIcon from "../images/germany-flag-medium.png";
-import korIcon from "../images/south-korea-flag-medium.png";
-import pyIcon from "../images/python_l9Src2C_CyOJ4MD.png";
-import sassIcon from "../images/sass.svg";
-import figIcon from "../images/figma.svg";
-import seperator from "../images/separatorBlack.png";
+import {
+  bgImage,
+  htmlIcon,
+  cssIcon,
+  jsIcon,
+  reactIcon,
+  bootstrapIcon,
+  gitIcon,
+  nodeIcon,
+  mongoIcon,
+  typeIcon,
+  graphIcon,
+  nestIcon,
+  engIcon,
+  gerIcon,
+  korIcon,
+  pyIcon,
+  sassIcon,
+  figIcon,
+  separator,
+} from "../images/images.js";
 
 const divStyle = {
   background:
@@ -61,7 +63,7 @@ function Home() {
             <span className="m-0 ps-4 fs-1">Hannes Cho</span>
           </Col>
           <Col className={colClass}>
-            <Image src={Fig} width={250} height={250} roundedCircle />
+            <Image src={bgImage} width={250} height={250} roundedCircle />
           </Col>
         </Row>
         <Row className="m-0 p-5 bg-dark text-white fs-6 fw-light">
@@ -79,7 +81,7 @@ function Home() {
         style={sepStyle}
         className="d-flex justify-content-center"
       >
-        <Image src={seperator} style={{ width: "10rem" }} />
+        <Image src={separator} style={{ width: "10rem" }} />
       </Row>
       <Container id="scrollspyHeading1" className="about-me">
         <Row fluid="md" className={rowClass}>
@@ -95,7 +97,7 @@ function Home() {
         style={sepStyle}
         className="d-flex justify-content-center"
       >
-        <Image src={seperator} style={{ width: "10rem" }} />
+        <Image src={separator} style={{ width: "10rem" }} />
       </Row>
       <Container id="scrollspyHeading2" className="skills">
         <Row fluid="md" className={rowClass}>
@@ -222,7 +224,7 @@ function Home() {
         style={sepStyle}
         className="d-flex justify-content-center"
       >
-        <Image src={seperator} style={{ width: "10rem" }} />
+        <Image src={separator} style={{ width: "10rem" }} />
       </Row>
       <Container id="scrollspyHeading3" className="projects">
         <Row fluid="md" className={rowClass}>
