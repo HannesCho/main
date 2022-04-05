@@ -36,6 +36,7 @@ const divStyle = {
 
 const textStyle = {
   letterSpacing: "1rem",
+  marginBottom: "2rem",
 };
 
 const iconStyle = {
@@ -48,8 +49,8 @@ const sepStyle = {
 
 const smallTitles =
   "mt-4 pt-3 pb-3 ps-3 text-center text-uppercase fs-2 fw-bold border border-dark border-4";
-const rowClass = "m-0 d-flex flex-row align-items-center vh-100";
-const colClass = "d-flex flex-column align-items-center vh-100";
+const rowClass = "m-0 d-flex flex-row align-items-center min-vh-100";
+const colClass = "d-flex flex-column align-items-center min-vh-100";
 const smallColClass = "d-flex flex-column align-items-center";
 
 function Home() {
@@ -119,13 +120,13 @@ function Home() {
             <span className={smallTitles} style={textStyle}>
               About Me
             </span>
-            <Container>
-              <Row fluid="md" className="">
-                <p>
+            <Container className="mt-4">
+              <Row fluid="md" className="fs-5">
+                <p style={{ textIndent: "3ch" }}>
                   I am a junior web developer with a variety of experience and
                   knowledge.
                 </p>
-                <p>
+                <p style={{ textIndent: "3ch" }}>
                   I have extensive experience in working as a team with people
                   with various backgrounds across regions and fields. I have
                   worked with diverse scientists on research teams, military
@@ -134,9 +135,7 @@ function Home() {
                   interpersonal skills that enable me to collaborate with other
                   people.
                 </p>
-              </Row>
-              <Row>
-                <p>
+                <p style={{ textIndent: "3ch" }}>
                   More than 8 years of studies in science rendered me
                   exceptional analytical and problem-solving skills as well as
                   critical reasoning skills. 2 years of mandatory military
@@ -146,7 +145,7 @@ function Home() {
                   gained valuable experience in mentoring students, supervising
                   teams, and facilitating events as a leader.
                 </p>
-                <p>
+                <p style={{ textIndent: "3ch" }}>
                   I enjoy learning new things as well as facing challenges and
                   that is why I am so passionate about software development. It
                   always challenges me, and I enjoy the process of finding a new
@@ -154,7 +153,7 @@ function Home() {
                   I have expanded my capacity to retain new things quickly and
                   become a proactive learner.
                 </p>
-                <p>
+                <p style={{ textIndent: "3ch" }}>
                   I believe all my skills and experience coupled with software
                   development skills would be valuable assets to my future team
                   and company.
