@@ -53,8 +53,7 @@ const cardStyle = {
 
 const smallTitles =
   "mt-4 pt-3 pb-3 ps-3 text-center text-uppercase fs-2 fw-bold border border-dark border-4";
-const rowClass =
-  "m-0 d-flex flex-row align-items-center min-vh-100 border border-danger";
+const rowClass = "m-0 d-flex flex-row align-items-center min-vh-100";
 const colClass = "d-flex flex-column align-items-center min-vh-100";
 const smallColClass = "d-flex flex-column align-items-center";
 
