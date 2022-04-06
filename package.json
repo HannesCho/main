@@ -1,5 +1,6 @@
 {
   "name": "homepage",
+  "homepage": "https://HannesCho.github.io/HomePage",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +13,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.1.3",
+    "gh-pages": "^3.2.3",
     "prettier-eslint": "^13.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.2.2",
@@ -24,6 +26,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
