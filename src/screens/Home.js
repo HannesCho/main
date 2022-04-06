@@ -1,11 +1,6 @@
-import { Col, Container, Row, Image } from "react-bootstrap";
+import { Col, Container, Row, Image, Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-  faLinkedinIn,
-  faMailchimp,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
   bgImage,
   htmlIcon,
@@ -26,8 +21,11 @@ import {
   sassIcon,
   figIcon,
   separator,
-} from "../images/images.js";
-import { faEnvelope, faMailBulk } from "@fortawesome/free-solid-svg-icons";
+  honis,
+  myres,
+  striker,
+} from "../images.js";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const divStyle = {
   background:
@@ -47,9 +45,16 @@ const sepStyle = {
   margin: "2rem",
 };
 
+const cardStyle = {
+  width: "100%",
+  height: "100%",
+  position: "relative",
+};
+
 const smallTitles =
   "mt-4 pt-3 pb-3 ps-3 text-center text-uppercase fs-2 fw-bold border border-dark border-4";
-const rowClass = "m-0 d-flex flex-row align-items-center min-vh-100";
+const rowClass =
+  "m-0 d-flex flex-row align-items-center min-vh-100 border border-danger";
 const colClass = "d-flex flex-column align-items-center min-vh-100";
 const smallColClass = "d-flex flex-column align-items-center";
 
@@ -303,6 +308,79 @@ function Home() {
             <span className={smallTitles} style={textStyle}>
               PROJECTS
             </span>
+            <Row lg={4} md={3} sm={2} xs={2} xxs={1}>
+              {/* ["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"] */}
+              <Col>
+                <Card style={cardStyle}>
+                  <Card.Img
+                    variant="top"
+                    src={myres}
+                    style={{ height: "150px" }}
+                  />
+                  <Card.Body>
+                    <Card.Title>Myres</Card.Title>
+                    <Card.Text>
+                      Web application for people who want to find, save, and use
+                      cool recipes.
+                    </Card.Text>
+                    <Button
+                      variant="primary"
+                      href="https://myres-app.herokuapp.com/"
+                    >
+                      To the site
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card style={cardStyle}>
+                  <Card.Img
+                    variant="top"
+                    src={honis}
+                    style={{ height: "150px" }}
+                  />
+                  <Card.Body>
+                    <Card.Title>Honis</Card.Title>
+                    <Card.Text>
+                      People can find and host local sport event through this
+                      web application.
+                    </Card.Text>
+                    <Button
+                      variant="primary"
+                      href="https://honis.herokuapp.com/"
+                    >
+                      To the site
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card style={cardStyle}>
+                  <Card.Img
+                    variant="top"
+                    src={striker}
+                    style={{ height: "150px" }}
+                  />
+                  <Card.Body>
+                    <Card.Title>Space Striker</Card.Title>
+                    <Card.Text>
+                      Real time shooting game. Destroy all the enemies in the
+                      space!
+                    </Card.Text>
+                    <Button
+                      variant="primary"
+                      href="https://hannescho.github.io/my-game-space-strikers/index.html "
+                    >
+                      Play this
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+
+            {/* https://honis.herokuapp.com/ */}
+            {/* https://myres-app.herokuapp.com/recipes */}
+            {/* https://hannescho.github.io/my-game-space-strikers/index.html */}
           </Col>
         </Row>
       </Container>
