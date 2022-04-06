@@ -1,6 +1,10 @@
 import { Col, Container, Row, Image, Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   bgImage,
   htmlIcon,
@@ -94,8 +98,14 @@ function Home() {
                 className="me-3"
               >
                 <FontAwesomeIcon
-                  icon={faLinkedin}
-                  style={{ width: "2rem", height: "2rem", color: "#0A66C2" }}
+                  icon={faLinkedinIn}
+                  style={{
+                    width: "1.8rem",
+                    height: "1.8rem",
+                    color: "white",
+                    backgroundColor: "#0A66C2",
+                    borderRadius: "10%",
+                  }}
                 />
               </a>
               <a href="mailto:hoonsungcho11@gmail.com">
@@ -109,6 +119,15 @@ function Home() {
           <Col className={smallColClass}>
             <Image src={bgImage} width={250} height={250} roundedCircle />
           </Col>
+        </Row>
+        <Row>
+          <Button
+            className="mt-4 pt-3 pb-3 ps-3 text-center text-uppercase text-dark fs-2 fw-bold border border-dark border-4 btn-secondary"
+            style={textStyle}
+            href="#scrollspyHeading1"
+          >
+            Learn More
+          </Button>
         </Row>
       </Container>
       <Row
@@ -307,7 +326,7 @@ function Home() {
             <span className={smallTitles} style={textStyle}>
               PROJECTS
             </span>
-            <Row lg={4} md={3} sm={2} xs={2} xxs={1}>
+            <Row md={3} sm={2} xs={2} xxs={1}>
               {/* ["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"] */}
               <Col>
                 <Card style={cardStyle}>
@@ -376,10 +395,6 @@ function Home() {
                 </Card>
               </Col>
             </Row>
-
-            {/* https://honis.herokuapp.com/ */}
-            {/* https://myres-app.herokuapp.com/recipes */}
-            {/* https://hannescho.github.io/my-game-space-strikers/index.html */}
           </Col>
         </Row>
       </Container>
