@@ -6,7 +6,7 @@ function Header() {
   return (
     <Navbar id="linked-navbar" bg="dark" variant="dark" fixed="top">
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/main">
           <FontAwesomeIcon icon={faHome} color="white" />
         </Navbar.Brand>
         <Nav className="colum justify-content-end">
