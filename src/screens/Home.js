@@ -343,7 +343,7 @@ function Home() {
                     </Card.Text>
                     <Button
                       variant="primary"
-                      href="https://myres-app.herokuapp.com/"
+                      href="https://myresapp.herokuapp.com/"
                     >
                       To the site
                     </Button>
