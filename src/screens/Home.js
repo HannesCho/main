@@ -117,7 +117,12 @@ function Home() {
             </div>
           </Col>
           <Col className={smallColClass}>
-            <Image src={bgImage} width={250} height={250} roundedCircle />
+            <Image
+              src={bgImage}
+              width={"200rem"}
+              height={"200rem"}
+              roundedCircle
+            />
           </Col>
         </Row>
         <Row>
@@ -206,7 +211,7 @@ function Home() {
                     Using Now :
                   </span>
                 </Row>
-                <Row className="m-3">
+                <Row md={4} sm={2} xs={2} className="m-3">
                   <Col className={smallColClass}>
                     <Image src={htmlIcon} style={iconStyle} roundedCircle />
                     <span>HTML</span>
@@ -224,7 +229,7 @@ function Home() {
                     <span>TYPESCRIPT</span>
                   </Col>
                 </Row>
-                <Row className="m-3">
+                <Row md={4} sm={2} xs={2} className="m-3">
                   <Col className={smallColClass}>
                     <Image src={reactIcon} style={iconStyle} roundedCircle />
                     <span>REACT</span>
@@ -246,7 +251,7 @@ function Home() {
                     <span>Github</span>
                   </Col>
                 </Row>
-                <Row className="m-3">
+                <Row md={4} sm={2} xs={2} className="m-3">
                   <Col className={smallColClass}>
                     <Image src={nodeIcon} style={iconStyle} roundedCircle />
                     <span>NodeJS</span>
@@ -271,7 +276,7 @@ function Home() {
                     Learing Now :
                   </span>
                 </Row>
-                <Row className="m-3">
+                <Row md={4} sm={2} xs={2} className="m-3">
                   <Col className={smallColClass}>
                     <Image src={sassIcon} style={iconStyle} roundedCircle />
                     <span>SASS</span>
@@ -290,7 +295,7 @@ function Home() {
                     Other Skills:
                   </span>
                 </Row>
-                <Row className="m-3">
+                <Row md={4} sm={2} xs={2} className="m-3">
                   <Col className={smallColClass}>
                     <Image src={korIcon} style={iconStyle} roundedCircle />
                     <span>Korean</span>
