@@ -59,7 +59,7 @@ const smallTitles =
   "mt-4 pt-3 pb-3 ps-3 text-center text-uppercase fs-2 fw-bold border border-dark border-4";
 const rowClass = "m-0 d-flex flex-row align-items-center min-vh-100";
 const colClass = "d-flex flex-column align-items-center min-vh-100";
-const smallColClass = "d-flex flex-column align-items-center";
+const smallColClass = "mt-4 d-flex flex-column align-items-center";
 
 function Home() {
   return (
@@ -117,12 +117,7 @@ function Home() {
             </div>
           </Col>
           <Col className={smallColClass}>
-            <Image
-              src={bgImage}
-              width={"200rem"}
-              height={"200rem"}
-              roundedCircle
-            />
+            <Image src={bgImage} width={"70%"} height={"70%"} roundedCircle />
           </Col>
         </Row>
         <Row>
@@ -333,7 +328,7 @@ function Home() {
             </span>
             <Row md={3} sm={2} xs={2} xxs={1}>
               {/* ["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"] */}
-              <Col>
+              <Col className={smallColClass}>
                 <Card style={cardStyle}>
                   <Card.Img
                     variant="top"
@@ -355,7 +350,7 @@ function Home() {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col>
+              <Col className={smallColClass}>
                 <Card style={cardStyle}>
                   <Card.Img
                     variant="top"
@@ -377,7 +372,7 @@ function Home() {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col>
+              <Col className={smallColClass}>
                 <Card style={cardStyle}>
                   <Card.Img
                     variant="top"
