@@ -387,7 +387,7 @@ function Home() {
                     </Card.Text>
                     <Button
                       variant="primary"
-                      href="https://hannescho.github.io/my-game-space-strikers/index.html "
+                      href="https://hannescho.github.io/space-strikers/index.html "
                     >
                       Play this
                     </Button>
