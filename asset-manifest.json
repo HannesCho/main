@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/main/static/css/main.e7720ab7.css",
-    "main.js": "/main/static/js/main.87b95264.js",
+    "main.js": "/main/static/js/main.eb2a1a5e.js",
     "static/media/myres.png": "/main/static/media/myres.7ffbbec7373f0f4803e3.png",
     "static/media/striker.png": "/main/static/media/striker.7be72bd8b3ab225caadb.png",
     "static/media/Graph_QL.png": "/main/static/media/Graph_QL.35a711a2022a3c9163a7.png",
@@ -10,24 +10,26 @@
     "static/media/MongoDB_XriFIJg.png": "/main/static/media/MongoDB_XriFIJg.8bf5073509d120df09d9.png",
     "static/media/python_l9Src2C_CyOJ4MD.png": "/main/static/media/python_l9Src2C_CyOJ4MD.02f691e4703bff5c0838.png",
     "static/media/honis.png": "/main/static/media/honis.eb86333e923986b54bb8.png",
+    "static/media/cal.png": "/main/static/media/cal.cfd27dfedc5dcc387948.png",
     "static/media/united-states-of-america-flag-medium.png": "/main/static/media/united-states-of-america-flag-medium.cb6a174cce8c7e007805.png",
+    "static/media/hrmanager.png": "/main/static/media/hrmanager.252de6753c0e33018888.png",
     "static/media/south-korea-flag-medium.png": "/main/static/media/south-korea-flag-medium.00156006a08b574e30f5.png",
-    "static/media/react.svg": "/main/static/media/react.5c0f7321c91f788b1bebc8facf5cef4f.svg",
-    "static/media/sass.svg": "/main/static/media/sass.4fa1e4eacbfb10cbe4b70a7b5c988799.svg",
-    "static/media/git.svg": "/main/static/media/git.ee1e4e9633b8dd1bf52740fd988a9582.svg",
-    "static/media/ts.svg": "/main/static/media/ts.1d314e7ed5f6928b633618188b61099f.svg",
-    "static/media/node.svg": "/main/static/media/node.3b41a76e533cdaaedee8c6de835f34a3.svg",
-    "static/media/bootstrap.svg": "/main/static/media/bootstrap.ca0583efa07a54105aa5bd4064dc7ecf.svg",
-    "static/media/figma.svg": "/main/static/media/figma.f720b89b9922a523e47d9e45b035335b.svg",
-    "static/media/js.svg": "/main/static/media/js.64eec748e81312b966d20ce6ce94cc8a.svg",
-    "static/media/css.svg": "/main/static/media/css.a19585053c8ea19329458d59e5829187.svg",
-    "static/media/html.svg": "/main/static/media/html.f8fbb93d1422fa3a317ea13613e97cd7.svg",
+    "static/media/react.svg": "/main/static/media/react.d1f13d9d360ff84f03095114a3d4ccc8.svg",
+    "static/media/sass.svg": "/main/static/media/sass.f64ddbfb1c66fb5f7237d68c2251ec43.svg",
+    "static/media/git.svg": "/main/static/media/git.abf754e74a391efbdeb5f02fd1b39636.svg",
+    "static/media/ts.svg": "/main/static/media/ts.53c1b887bd32670f861dfcc5e2f2d0bf.svg",
+    "static/media/node.svg": "/main/static/media/node.0f067d43046d8b5fb7dbadca671ab473.svg",
+    "static/media/bootstrap.svg": "/main/static/media/bootstrap.241b2704499e2509c03fa0b3c31f7609.svg",
+    "static/media/figma.svg": "/main/static/media/figma.14871bd42b052459a3d27390aaace8d5.svg",
+    "static/media/js.svg": "/main/static/media/js.d6f6d8558528ec1d62efcc8538fd8b2e.svg",
+    "static/media/css.svg": "/main/static/media/css.74b9a46af4919fe76033e79d47279930.svg",
+    "static/media/html.svg": "/main/static/media/html.fc000d404e31c61c823a9c27adb6f0cc.svg",
     "index.html": "/main/index.html",
     "main.e7720ab7.css.map": "/main/static/css/main.e7720ab7.css.map",
-    "main.87b95264.js.map": "/main/static/js/main.87b95264.js.map"
+    "main.eb2a1a5e.js.map": "/main/static/js/main.eb2a1a5e.js.map"
   },
   "entrypoints": [
     "static/css/main.e7720ab7.css",
-    "static/js/main.87b95264.js"
+    "static/js/main.eb2a1a5e.js"
   ]
 }
