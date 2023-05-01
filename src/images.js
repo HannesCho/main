@@ -20,6 +20,8 @@ import separator from "./images/separatorBlack.png";
 import honis from "./images/honis.png";
 import myres from "./images/myres.png";
 import striker from "./images/striker.png";
+import hrmanager from "./images/hrmanager.png";
+import cal from "./images/cal.png";
 
 export {
   bgImage,
@@ -44,4 +46,6 @@ export {
   honis,
   myres,
   striker,
+  hrmanager,
+  cal,
 };

@@ -28,6 +28,8 @@ import {
   honis,
   myres,
   striker,
+  hrmanager,
+  cal,
 } from "../images.js";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -332,20 +334,52 @@ function Home() {
                 <Card style={cardStyle}>
                   <Card.Img
                     variant="top"
-                    src={myres}
+                    src={cal}
                     style={{ height: "150px" }}
                   />
                   <Card.Body>
-                    <Card.Title>Myres</Card.Title>
+                    <Card.Title>Delivery Fee Calculator</Card.Title>
                     <Card.Text>
-                      Web application for people who want to find, save, and use
-                      cool recipes.
+                      Web application to calculate the delivery fee.
+                    </Card.Text>
+                    <Button 
+                      variant="primary"
+                      href="https://deliverycal.herokuapp.com/"
+                    >
+                      To the site
+                    </Button>
+                    <Button className="m-2"
+                      variant="primary"
+                      href="https://github.com/HannesCho/Wolt-Delivery-Fee-Calculator/"
+                    >
+                      Code
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col className={smallColClass}>
+                <Card style={cardStyle}>
+                  <Card.Img
+                    variant="top"
+                    src={hrmanager}
+                    style={{ height: "150px" }}
+                  />
+                  <Card.Body>
+                    <Card.Title>HR Manager</Card.Title>
+                    <Card.Text>
+                      Web application for the HR department to manage employees.
                     </Card.Text>
                     <Button
                       variant="primary"
-                      href="https://myresapp.herokuapp.com/"
+                      href="https://hrmanager-front.herokuapp.com/"
                     >
                       To the site
+                    </Button>
+                    <Button className="m-2"
+                      variant="primary"
+                      href="https://github.com/HannesCho/HR_Manager"
+                    >
+                      Code
                     </Button>
                   </Card.Body>
                 </Card>
@@ -369,49 +403,11 @@ function Home() {
                     >
                       To the site
                     </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col className={smallColClass}>
-                <Card style={cardStyle}>
-                  <Card.Img
-                    variant="top"
-                    src={myres}
-                    style={{ height: "150px" }}
-                  />
-                  <Card.Body>
-                    <Card.Title>Myres</Card.Title>
-                    <Card.Text>
-                      Web application for people who want to find, save, and use
-                      cool recipes.
-                    </Card.Text>
-                    <Button
+                    <Button className="m-2"
                       variant="primary"
-                      href="https://myresapp.herokuapp.com/"
+                      href="https://github.com/HannesCho/MyRecipes"
                     >
-                      To the site
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col className={smallColClass}>
-                <Card style={cardStyle}>
-                  <Card.Img
-                    variant="top"
-                    src={honis}
-                    style={{ height: "150px" }}
-                  />
-                  <Card.Body>
-                    <Card.Title>Honis</Card.Title>
-                    <Card.Text>
-                      People can find and host local sport event through this
-                      web application.
-                    </Card.Text>
-                    <Button
-                      variant="primary"
-                      href="https://honis.herokuapp.com/"
-                    >
-                      To the site
+                      Code
                     </Button>
                   </Card.Body>
                 </Card>
@@ -434,6 +430,12 @@ function Home() {
                       href="https://hannescho.github.io/space-strikers/index.html "
                     >
                       Play this
+                    </Button>
+                    <Button className="m-2"
+                      variant="primary"
+                      href="https://github.com/HannesCho/space-strikers"
+                    >
+                      Code
                     </Button>
                   </Card.Body>
                 </Card>
