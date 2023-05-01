@@ -354,6 +354,50 @@ function Home() {
                 <Card style={cardStyle}>
                   <Card.Img
                     variant="top"
+                    src={myres}
+                    style={{ height: "150px" }}
+                  />
+                  <Card.Body>
+                    <Card.Title>Myres</Card.Title>
+                    <Card.Text>
+                      Web application for people who want to find, save, and use
+                      cool recipes.
+                    </Card.Text>
+                    <Button
+                      variant="primary"
+                      href="https://myresapp.herokuapp.com/"
+                    >
+                      To the site
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col className={smallColClass}>
+                <Card style={cardStyle}>
+                  <Card.Img
+                    variant="top"
+                    src={myres}
+                    style={{ height: "150px" }}
+                  />
+                  <Card.Body>
+                    <Card.Title>Myres</Card.Title>
+                    <Card.Text>
+                      Web application for people who want to find, save, and use
+                      cool recipes.
+                    </Card.Text>
+                    <Button
+                      variant="primary"
+                      href="https://myresapp.herokuapp.com/"
+                    >
+                      To the site
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col className={smallColClass}>
+                <Card style={cardStyle}>
+                  <Card.Img
+                    variant="top"
                     src={honis}
                     style={{ height: "150px" }}
                   />
