@@ -25,11 +25,12 @@ import {
   sassIcon,
   figIcon,
   separator,
-  honis,
-  myres,
   striker,
   hrmanager,
   cal,
+  factory,
+  Avocado,
+  jeurope,
 } from "../images.js";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -388,26 +389,61 @@ function Home() {
                 <Card style={cardStyle}>
                   <Card.Img
                     variant="top"
-                    src={myres}
+                    src={factory}
                     style={{ height: "150px" }}
                   />
                   <Card.Body>
-                    <Card.Title>Myres</Card.Title>
+                    <Card.Title>123 Factory.de</Card.Title>
                     <Card.Text>
-                      Web application for people who want to find, save, and use
-                      cool recipes.
+                      Using a CMS to Modify or Update a Website
                     </Card.Text>
                     <Button
                       variant="primary"
-                      href="https://myresapp.herokuapp.com/"
+                      href="https://www.123factory.de/"
                     >
                       To the site
                     </Button>
-                    <Button className="m-2"
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col className={smallColClass}>
+                <Card style={cardStyle}>
+                  <Card.Img
+                    variant="top"
+                    src={Avocado}
+                    style={{ height: "150px" }}
+                  />
+                  <Card.Body>
+                    <Card.Title>avocadocom.eu</Card.Title>
+                    <Card.Text>
+                      Using a CMS to Modify or Update a Website
+                    </Card.Text>
+                    <Button
                       variant="primary"
-                      href="https://github.com/HannesCho/MyRecipes"
+                      href="https://avocadocom.eu/"
                     >
-                      Code
+                      To the site
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col className={smallColClass}>
+                <Card style={cardStyle}>
+                  <Card.Img
+                    variant="top"
+                    src={jeurope}
+                    style={{ height: "150px" }}
+                  />
+                  <Card.Body>
+                    <Card.Title>j-europe.com</Card.Title>
+                    <Card.Text>
+                      Using a CMS to Modify or Update a Website and add some features.
+                    </Card.Text>
+                    <Button
+                      variant="primary"
+                      href="https://j-europe.com/jdproduct/"
+                    >
+                      To the site
                     </Button>
                   </Card.Body>
                 </Card>

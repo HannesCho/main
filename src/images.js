@@ -18,10 +18,12 @@ import sassIcon from "./images/sass.svg";
 import figIcon from "./images/figma.svg";
 import separator from "./images/separatorBlack.png";
 import honis from "./images/honis.png";
-import myres from "./images/myres.png";
 import striker from "./images/striker.png";
 import hrmanager from "./images/hrmanager.png";
 import cal from "./images/cal.png";
+import factory from "./images/factory.png"
+import Avocado from "./images/Avocado.png"
+import jeurope from "./images/jeurope.png"
 
 export {
   bgImage,
@@ -44,8 +46,10 @@ export {
   figIcon,
   separator,
   honis,
-  myres,
   striker,
   hrmanager,
   cal,
+  factory,
+  Avocado,
+  jeurope,
 };
