@@ -345,7 +345,7 @@ function Home() {
                     </Card.Text>
                     <Button 
                       variant="primary"
-                      href="https://deliverycal.herokuapp.com/"
+                      href="http://woltcal.hannesstudio.com/"
                     >
                       To the site
                     </Button>
@@ -372,7 +372,7 @@ function Home() {
                     </Card.Text>
                     <Button
                       variant="primary"
-                      href="https://hrmanager-front.herokuapp.com/"
+                      href="http://hrmanager.hannesstudio.com"
                     >
                       To the site
                     </Button>
@@ -444,34 +444,6 @@ function Home() {
                       href="https://j-europe.com/jdproduct/"
                     >
                       To the site
-                    </Button>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col className={smallColClass}>
-                <Card style={cardStyle}>
-                  <Card.Img
-                    variant="top"
-                    src={striker}
-                    style={{ height: "150px" }}
-                  />
-                  <Card.Body>
-                    <Card.Title>Space Striker</Card.Title>
-                    <Card.Text>
-                      Real time shooting game. Destroy all the enemies in the
-                      space!
-                    </Card.Text>
-                    <Button
-                      variant="primary"
-                      href="https://hannescho.github.io/space-strikers/index.html "
-                    >
-                      Play this
-                    </Button>
-                    <Button className="m-2"
-                      variant="primary"
-                      href="https://github.com/HannesCho/space-strikers"
-                    >
-                      Code
                     </Button>
                   </Card.Body>
                 </Card>
