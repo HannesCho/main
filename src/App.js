@@ -1,10 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import routes from "./routes";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 import Home from "./screens/Home";
-import Projects from "./screens/Projects";
 import Layout from "./components/Layout";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
   return (
@@ -18,14 +17,6 @@ function App() {
             element={
               <Layout>
                 <Home />
-              </Layout>
-            }
-          />
-          <Route
-            path={routes.projects}
-            element={
-              <Layout>
-                <Projects />
               </Layout>
             }
           />

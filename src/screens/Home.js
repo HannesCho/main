@@ -68,7 +68,7 @@ function Home() {
   return (
     <Container
       fluid
-      className="vw-100 p-0 m-0 bg-secondary"
+      className="vw-100 p-0 m-0 bg-light"
       data-bs-spy="scroll"
       data-bs-target="linked-navbar"
       data-bs-offset="0"
@@ -77,7 +77,7 @@ function Home() {
       <Container
         fluid
         id="home"
-        className="home vw-100 vh-100 p-0 m-0 bg-secondary"
+        className="home vw-100 vh-100 p-0 m-0 bg-light"
       >
         <Row
           fluid="md"
@@ -343,13 +343,14 @@ function Home() {
                     <Card.Text>
                       Web application to calculate the delivery fee.
                     </Card.Text>
-                    <Button 
+                    <Button
                       variant="primary"
                       href="http://woltcal.hannesstudio.com/"
                     >
                       To the site
                     </Button>
-                    <Button className="m-2"
+                    <Button
+                      className="m-2"
                       variant="primary"
                       href="https://github.com/HannesCho/Wolt-Delivery-Fee-Calculator/"
                     >
@@ -376,7 +377,8 @@ function Home() {
                     >
                       To the site
                     </Button>
-                    <Button className="m-2"
+                    <Button
+                      className="m-2"
                       variant="primary"
                       href="https://github.com/HannesCho/HR_Manager"
                     >
@@ -397,10 +399,7 @@ function Home() {
                     <Card.Text>
                       Using a CMS to Modify or Update a Website
                     </Card.Text>
-                    <Button
-                      variant="primary"
-                      href="https://www.123factory.de/"
-                    >
+                    <Button variant="primary" href="https://www.123factory.de/">
                       To the site
                     </Button>
                   </Card.Body>
@@ -418,10 +417,7 @@ function Home() {
                     <Card.Text>
                       Using a CMS to Modify or Update a Website
                     </Card.Text>
-                    <Button
-                      variant="primary"
-                      href="https://avocadocom.eu/"
-                    >
+                    <Button variant="primary" href="https://avocadocom.eu/">
                       To the site
                     </Button>
                   </Card.Body>
@@ -437,7 +433,8 @@ function Home() {
                   <Card.Body>
                     <Card.Title>j-europe.com</Card.Title>
                     <Card.Text>
-                      Using a CMS to Modify or Update a Website and add some features.
+                      Using a CMS to Modify or Update a Website and add some
+                      features.
                     </Card.Text>
                     <Button
                       variant="primary"
