@@ -10,3 +10,11 @@
   padding: 0px 20px;
   border-radius: 30px;
 }
+
+.about-me {
+  background-color: #fef7e9;
+}
+
+.card:hover {
+  border: 3px solid black;
+}

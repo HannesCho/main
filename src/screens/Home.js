@@ -24,19 +24,30 @@ import {
   pyIcon,
   sassIcon,
   figIcon,
-  separator,
-  striker,
   hrmanager,
   cal,
   factory,
   Avocado,
   jeurope,
+  express,
+  mariadb,
+  mysql,
+  jest,
 } from "../images.js";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const divStyle = {
-  background:
-    "linear-gradient(110deg, #6C757D, #6C757D 50%, #212529 50%, #212529)",
+  background: "white",
+};
+
+const halloStyle = {
+  background: "white",
+  color: "#5C64CF",
+  fontSize: "25px",
+  width: "100px",
+  transform: "rotate(-30deg)",
+  border: "2px solid #5C64CF",
+  textAlign: "center",
 };
 
 const textStyle = {
@@ -48,9 +59,6 @@ const iconStyle = {
   width: "3rem",
   height: "3rem",
 };
-const sepStyle = {
-  margin: "2rem",
-};
 
 const cardStyle = {
   width: "100%",
@@ -58,17 +66,16 @@ const cardStyle = {
   position: "relative",
 };
 
-const smallTitles =
-  "mt-4 pt-3 pb-3 ps-3 text-center text-uppercase fs-2 fw-bold border border-dark border-4";
+const smallTitles = "mt-4 pt-3 pb-3 ps-3 text-start text-uppercase h1 fw-bold";
 const rowClass = "m-0 d-flex flex-row align-items-center min-vh-100";
 const colClass = "d-flex flex-column align-items-center min-vh-100";
-const smallColClass = "mt-4 d-flex flex-column align-items-center";
+const smallColClass = "mt-2 d-flex flex-inline align-items-center";
 
 function Home() {
   return (
     <Container
       fluid
-      className="vw-100 p-0 m-0 bg-light"
+      className="vw-100 p-0 m-0 bg-white"
       data-bs-spy="scroll"
       data-bs-target="linked-navbar"
       data-bs-offset="0"
@@ -77,160 +84,175 @@ function Home() {
       <Container
         fluid
         id="home"
-        className="home vw-100 vh-100 p-0 m-0 bg-light"
+        className="home vw-100 vh-100 p-0 m-0 bg-white"
       >
         <Row
           fluid="md"
           style={divStyle}
-          className="m-0 d-flex flex-row align-items-center h-75"
+          className="m-0 d-flex flex-row align-items-center h-100"
         >
-          <Col className="d-flex flex-column">
-            <span className="m-0 ps-4 fs-6 text-start">
-              I am a Web Developer
-            </span>
-            <span className="m-0 fs-1 text-center">Hannes Cho</span>
-            <div className="d-flex flex-row align-items-center justify-content-center w-100 mt-5">
-              <a href="https://github.com/HannesCho/" className="me-3">
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  style={{ width: "2rem", height: "2rem", color: "black" }}
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/hoonsungcho/"
-                className="me-3"
-              >
-                <FontAwesomeIcon
-                  icon={faLinkedinIn}
-                  style={{
-                    width: "1.8rem",
-                    height: "1.8rem",
-                    color: "white",
-                    backgroundColor: "#0A66C2",
-                    borderRadius: "10%",
-                  }}
-                />
-              </a>
-              <a href="mailto:hoonsungcho11@gmail.com">
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  style={{ width: "2rem", height: "2rem", color: "black" }}
-                />
-              </a>
+          <Col className="ms-4 d-flex flex-column align-items-end">
+            <div className="me-4 d-flex flex-column" style={{ width: "500px" }}>
+              <div style={halloStyle}>Hallo!</div>
+              <br></br>
+              <span className="ml-3 ps-4 h1 text-start">
+                Unleashing innovation at the crossroads of science and software:
+              </span>
+              <span className="m-2 ps-4 h3 text-start">
+                I'm here to redefine your digital experience with every line of
+                code.
+              </span>
+              <div className="d-flex flex-row align-items-center justify-content-center w-100 mt-5">
+                <a href="https://github.com/HannesCho/" className="me-3">
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    style={{ width: "2rem", height: "2rem", color: "black" }}
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/hoonsungcho/"
+                  className="me-3"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedinIn}
+                    style={{
+                      width: "1.8rem",
+                      height: "1.8rem",
+                      color: "white",
+                      backgroundColor: "#0A66C2",
+                      borderRadius: "10%",
+                    }}
+                  />
+                </a>
+                <a href="mailto:hoonsungcho11@gmail.com">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    style={{ width: "2rem", height: "2rem", color: "black" }}
+                  />
+                </a>
+              </div>
             </div>
           </Col>
-          <Col className={smallColClass}>
-            <Image src={bgImage} width={"70%"} height={"70%"} roundedCircle />
+          <Col className="mt-2 d-flex flex-colum align-items-center">
+            <div
+              className="d-flex flex-column align-items-center border border-dark border-3"
+              style={{ width: "500px", height: "500px" }}
+            >
+              <Image src={bgImage} width={"100%"} height={"100%"} />
+            </div>
           </Col>
         </Row>
-        <Row>
-          <Button
-            className="mt-4 pt-3 pb-3 ps-3 text-center text-uppercase text-dark fs-2 fw-bold border border-dark border-4 btn-secondary"
-            style={textStyle}
-            href="#scrollspyHeading1"
-          >
-            Learn More
-          </Button>
-        </Row>
       </Container>
-      <Row
-        id="scrollspyHeading1"
-        style={sepStyle}
-        className="d-flex justify-content-center"
-      >
-        <Image src={separator} style={{ width: "10rem" }} />
-      </Row>
-      <Container className="about-me d-flex flex-column">
+      <Row id="aboutme"></Row>
+      <Container className="about-me d-flex flex-column pt-5 mt-2">
         <Row fluid="md" className={rowClass}>
           <Col className={colClass}>
             <span className={smallTitles} style={textStyle}>
-              About Me
+              My story
             </span>
             <Container className="mt-4">
               <Row fluid="md" className="fs-5">
                 <p style={{ textIndent: "3ch" }}>
-                  I am a junior web developer with a variety of experience and
-                  knowledge.
+                  In the heart of Berlin, there lived a curious mind with a
+                  degree in Biochemistry from the Free University of Berlin.
+                  This individual, whose days had once been filled with the
+                  study of life's microscopic details, found himself drawn to a
+                  vastly different world: software development. His journey from
+                  biochemistry to tech was not a common path, but it was one
+                  that showcased his unwavering passion for learning and
+                  problem-solving.
                 </p>
                 <p style={{ textIndent: "3ch" }}>
-                  I have extensive experience in working as a team with people
-                  with various backgrounds across regions and fields. I have
-                  worked with diverse scientists on research teams, military
-                  officials, and people with various age groups from students to
-                  elders, and have cultivated essential communication and
-                  interpersonal skills that enable me to collaborate with other
-                  people.
+                  As he ventured into this new realm, he brought with him a
+                  unique set of skills honed through years of strategic planning
+                  and team collaboration. Nights spent immersed in coding boot
+                  camps and self-study sessions transformed this eager learner
+                  into a proficient software developer, skilled in languages
+                  like JavaScript and Python, and frameworks such as ReactJS and
+                  Django.
                 </p>
                 <p style={{ textIndent: "3ch" }}>
-                  More than 8 years of studies in science rendered me
-                  exceptional analytical and problem-solving skills as well as
-                  critical reasoning skills. 2 years of mandatory military
-                  service in South Korea elevated my ability to work under high
-                  pressure and deliver results on time to impeccable standards.
-                  Through volunteer work in the bible school and church, I have
-                  gained valuable experience in mentoring students, supervising
-                  teams, and facilitating events as a leader.
+                  One of his crowning achievements was the transformation of an
+                  e-commerce website. This wasn't just a project; it was his
+                  mission to enhance accessibility and user experience. By
+                  redesigning the layout, enriching product descriptions, and
+                  integrating user-friendly features, he managed to increase
+                  visitor numbers by 30% and boost sales by 10%. This
+                  achievement reflects his strong commitment to positively
+                  impacting the digital landscape, one thoughtful line of code
+                  at a time.
                 </p>
                 <p style={{ textIndent: "3ch" }}>
-                  I enjoy learning new things as well as facing challenges and
-                  that is why I am so passionate about software development. It
-                  always challenges me, and I enjoy the process of finding a new
-                  way of solving problems. Through self-teaching and boot camp,
-                  I have expanded my capacity to retain new things quickly and
-                  become a proactive learner.
-                </p>
-                <p style={{ textIndent: "3ch" }}>
-                  I believe all my skills and experience coupled with software
-                  development skills would be valuable assets to my future team
-                  and company.
+                  Now, as he seeks new challenges and opportunities to grow, he
+                  stands at the threshold of the next chapter, ready to
+                  contribute his blend of analytical prowess and technical skill
+                  to the world of software development. This is not just a
+                  transition from one career to another; it's a journey of
+                  transformation, driven by a passion to explore, learn, and
+                  innovate.
                 </p>
               </Row>
             </Container>
           </Col>
         </Row>
       </Container>
-      <Row
-        id="scrollspyHeading2"
-        style={sepStyle}
-        className="d-flex justify-content-center"
-      >
-        <Image src={separator} style={{ width: "10rem" }} />
-      </Row>
-      <Container className="skills">
+      <Row id="skills"></Row>
+      <Container className="skills pt-5 mt-2">
         <Row fluid="md" className={rowClass}>
           <Col className={colClass}>
             <span className={smallTitles} style={textStyle}>
               Skills
             </span>
             <Container className="d-flex flex-column">
-              <Container className="using-now">
+              <Container className="skill-con">
                 <Row className="mt-4">
-                  <span className="fs-3 fw-bold text-uppercase">
-                    Using Now :
+                  <span className="h4 fw-bold text-uppercase">
+                    Programming Languages
                   </span>
                 </Row>
-                <Row md={4} sm={2} xs={2} className="m-3">
+                <Row md={4} sm={2} xs={2} className="m-1">
                   <Col className={smallColClass}>
                     <Image src={htmlIcon} style={iconStyle} roundedCircle />
-                    <span>HTML</span>
+                    <span className="ms-2 h5">HTML</span>
                   </Col>
                   <Col className={smallColClass}>
                     <Image src={cssIcon} style={iconStyle} roundedCircle />
-                    <span>CSS</span>
+                    <span className="ms-2 h5">CSS</span>
+                  </Col>
+                  <Col className={smallColClass}>
+                    <Image src={sassIcon} style={iconStyle} roundedCircle />
+                    <span className="ms-2 h5">SASS</span>
                   </Col>
                   <Col className={smallColClass}>
                     <Image src={jsIcon} style={iconStyle} roundedCircle />
-                    <span>JAVASCRIPT</span>
-                  </Col>
-                  <Col className={smallColClass}>
-                    <Image src={typeIcon} style={iconStyle} roundedCircle />
-                    <span>TYPESCRIPT</span>
+                    <span className="ms-2 h5">JAVASCRIPT</span>
                   </Col>
                 </Row>
-                <Row md={4} sm={2} xs={2} className="m-3">
+                <Row md={4} sm={2} xs={2} className="m-1">
+                  <Col className={smallColClass}>
+                    <Image src={typeIcon} style={iconStyle} roundedCircle />
+                    <span className="ms-2 h5">TYPESCRIPT</span>
+                  </Col>
+                  <Col className={smallColClass}>
+                    <Image src={pyIcon} style={iconStyle} roundedCircle />
+                    <span className="ms-2 h5">Python</span>
+                  </Col>
+                </Row>
+              </Container>
+              <Container className="skill-con">
+                <Row className="mt-4">
+                  <span className="h4 fw-bold text-uppercase">
+                    Frameworks & Libraries
+                  </span>
+                </Row>
+                <Row md={4} sm={2} xs={2} className="m-1">
                   <Col className={smallColClass}>
                     <Image src={reactIcon} style={iconStyle} roundedCircle />
-                    <span>REACT</span>
+                    <span className="ms-2 h5">REACT</span>
+                  </Col>
+                  <Col className={smallColClass}>
+                    <Image src={nestIcon} style={iconStyle} roundedCircle />
+                    <span className="ms-2 h5">NestJS</span>
                   </Col>
                   <Col className={smallColClass}>
                     <Image
@@ -238,77 +260,80 @@ function Home() {
                       style={iconStyle}
                       roundedCircle
                     />
-                    <span>BOOTSTRAP</span>
-                  </Col>
-                  <Col className={smallColClass}>
-                    <Image src={gitIcon} style={iconStyle} roundedCircle />
-                    <span>Git</span>
-                  </Col>
-                  <Col className={smallColClass}>
-                    <FontAwesomeIcon icon={faGithub} style={iconStyle} />
-                    <span>Github</span>
-                  </Col>
-                </Row>
-                <Row md={4} sm={2} xs={2} className="m-3">
-                  <Col className={smallColClass}>
-                    <Image src={nodeIcon} style={iconStyle} roundedCircle />
-                    <span>NodeJS</span>
-                  </Col>
-                  <Col className={smallColClass}>
-                    <Image src={mongoIcon} style={iconStyle} roundedCircle />
-                    <span>MongoDB</span>
+                    <span className="ms-2 h5">BOOTSTRAP</span>
                   </Col>
                   <Col className={smallColClass}>
                     <Image src={graphIcon} style={iconStyle} roundedCircle />
-                    <span>GraphQL</span>
+                    <span className="ms-2 h5">GraphQL</span>
+                  </Col>
+                  <Col className={smallColClass}></Col>
+                </Row>
+              </Container>
+              <Container className="skill-con">
+                <Row className="mt-4">
+                  <span className="h4 fw-bold text-uppercase">Database</span>
+                </Row>
+                <Row md={4} sm={2} xs={2} className="m-1">
+                  <Col className={smallColClass}>
+                    <Image src={mongoIcon} style={iconStyle} roundedCircle />
+                    <span className="ms-2 h5">MongoDB</span>
                   </Col>
                   <Col className={smallColClass}>
-                    <Image src={nestIcon} style={iconStyle} roundedCircle />
-                    <span>NestJS</span>
+                    <Image src={graphIcon} style={iconStyle} roundedCircle />
+                    <span className="ms-2 h5">GraphQL</span>
+                  </Col>
+                  <Col className={smallColClass}>
+                    <Image src={mariadb} style={iconStyle} roundedCircle />
+                    <span className="ms-2 h5">MariaDB</span>
+                  </Col>
+                  <Col className={smallColClass}>
+                    <Image src={mysql} style={iconStyle} roundedCircle />
+                    <span className="ms-2 h5">MySQL</span>
                   </Col>
                 </Row>
               </Container>
-              <Container className="learing-now">
+              <Container className="skill-con">
                 <Row className="mt-4">
-                  <span className="fs-3 fw-bold text-uppercase">
-                    Learing Now :
-                  </span>
+                  <span className="h4 fw-bold text-uppercase">Others </span>
                 </Row>
-                <Row md={4} sm={2} xs={2} className="m-3">
+
+                <Row md={4} sm={2} xs={2} className="m-1">
                   <Col className={smallColClass}>
-                    <Image src={sassIcon} style={iconStyle} roundedCircle />
-                    <span>SASS</span>
+                    <Image src={gitIcon} style={iconStyle} roundedCircle />
+                    <span className="ms-2 h5">Git</span>
+                  </Col>
+                  <Col className={smallColClass}>
+                    <FontAwesomeIcon icon={faGithub} style={iconStyle} />
+                    <span className="ms-2 h5">Github</span>
+                  </Col>
+                  <Col className={smallColClass}>
+                    <Image src={nodeIcon} style={iconStyle} roundedCircle />
+                    <span className="ms-2 h5">NodeJS</span>
                   </Col>
                   <Col className={smallColClass}>
                     <Image src={figIcon} style={iconStyle} roundedCircle />
-                    <span>Figma</span>
+                    <span className="ms-2 h5">Figma</span>
                   </Col>
-                  <Col className={smallColClass}></Col>
-                  <Col className={smallColClass}></Col>
                 </Row>
               </Container>
-              <Container className="other-skills">
+              <Container className="skill-con">
                 <Row className="mt-4">
-                  <span className="fs-3 fw-bold text-uppercase">
-                    Other Skills:
+                  <span className="h4 fw-bold text-uppercase">
+                    Language Skills
                   </span>
                 </Row>
-                <Row md={4} sm={2} xs={2} className="m-3">
+                <Row md={4} sm={2} xs={2} className="m-1">
                   <Col className={smallColClass}>
                     <Image src={korIcon} style={iconStyle} roundedCircle />
-                    <span>Korean</span>
+                    <span className="ms-2 h5">Korean</span>
                   </Col>
                   <Col className={smallColClass}>
                     <Image src={engIcon} style={iconStyle} roundedCircle />
-                    <span>English</span>
+                    <span className="ms-2 h5">English</span>
                   </Col>
                   <Col className={smallColClass}>
                     <Image src={gerIcon} style={iconStyle} roundedCircle />
-                    <span>German</span>
-                  </Col>
-                  <Col className={smallColClass}>
-                    <Image src={pyIcon} style={iconStyle} roundedCircle />
-                    <span>python</span>
+                    <span className="ms-2 h5">German</span>
                   </Col>
                 </Row>
               </Container>
@@ -316,14 +341,8 @@ function Home() {
           </Col>
         </Row>
       </Container>
-      <Row
-        id="scrollspyHeading3"
-        style={sepStyle}
-        className="d-flex justify-content-center"
-      >
-        <Image src={separator} style={{ width: "10rem" }} />
-      </Row>
-      <Container className="projects">
+      <Row id="projects"></Row>
+      <Container className="projects pt-4 mt-2">
         <Row fluid="md" className={rowClass}>
           <Col className={colClass}>
             <span className={smallTitles} style={textStyle}>
@@ -397,7 +416,7 @@ function Home() {
                   <Card.Body>
                     <Card.Title>123 Factory.de</Card.Title>
                     <Card.Text>
-                      Using a CMS to Modify or Update a Website
+                      Using a CMS to modify and update a website.
                     </Card.Text>
                     <Button variant="primary" href="https://www.123factory.de/">
                       To the site
@@ -405,7 +424,7 @@ function Home() {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col className={smallColClass}>
+              <Col className="mt-4 d-flex flex-inline align-items-center">
                 <Card style={cardStyle}>
                   <Card.Img
                     variant="top"
@@ -415,7 +434,7 @@ function Home() {
                   <Card.Body>
                     <Card.Title>avocadocom.eu</Card.Title>
                     <Card.Text>
-                      Using a CMS to Modify or Update a Website
+                      Using a CMS to modify and update a website.
                     </Card.Text>
                     <Button variant="primary" href="https://avocadocom.eu/">
                       To the site
@@ -423,7 +442,7 @@ function Home() {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col className={smallColClass}>
+              <Col className="mt-4 d-flex flex-inline align-items-center">
                 <Card style={cardStyle}>
                   <Card.Img
                     variant="top"
@@ -433,8 +452,7 @@ function Home() {
                   <Card.Body>
                     <Card.Title>j-europe.com</Card.Title>
                     <Card.Text>
-                      Using a CMS to Modify or Update a Website and add some
-                      features.
+                      Using a CMS to modify and update a website.
                     </Card.Text>
                     <Button
                       variant="primary"

@@ -1,4 +1,4 @@
-import bgImage from "./images/profile.jpeg";
+import bgImage from "./images/profile.png";
 import htmlIcon from "./images/html.svg";
 import cssIcon from "./images/css.svg";
 import jsIcon from "./images/js.svg";
@@ -21,9 +21,13 @@ import honis from "./images/honis.png";
 import striker from "./images/striker.png";
 import hrmanager from "./images/hrmanager.png";
 import cal from "./images/cal.png";
-import factory from "./images/factory.png"
-import Avocado from "./images/Avocado.png"
-import jeurope from "./images/jeurope.png"
+import factory from "./images/factory.png";
+import Avocado from "./images/Avocado.png";
+import jeurope from "./images/jeurope.png";
+import express from "./images/express.png";
+import mariadb from "./images/mariadb.png";
+import mysql from "./images/mysql.jpg";
+import jest from "./images/jest.png";
 
 export {
   bgImage,
@@ -52,4 +56,8 @@ export {
   factory,
   Avocado,
   jeurope,
+  express,
+  mariadb,
+  mysql,
+  jest,
 };
