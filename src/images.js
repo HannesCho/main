@@ -1,4 +1,4 @@
-import bgImage from "./images/profile.png";
+import bgImage from "./images/profile.jpeg";
 import htmlIcon from "./images/html.svg";
 import cssIcon from "./images/css.svg";
 import jsIcon from "./images/js.svg";
